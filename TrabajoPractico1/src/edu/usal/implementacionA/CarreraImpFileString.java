@@ -1,5 +1,9 @@
 package edu.usal.implementacionA;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
@@ -8,10 +12,15 @@ import edu.usal.interfaces.CarreraDAO;
 
 public class CarreraImpFileString implements CarreraDAO {
 
+	private File file;
+	private BufferedWriter bw;
+	private FileReader fr;
+	private BufferedReader br;
+	
 	@Override
 	public void addCarrera(Carrera car) throws IOException {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
